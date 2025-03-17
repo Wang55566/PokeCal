@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Damage Calculator</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="pokemon-wrapper">
+      <div>
+        <label for="search-attacker-input">Attacker:</label>
+        <input
+          type="text"
+          id="search-attacker-input"
+          placeholder="Enter Pokémon name"
+        />
+        <div id="attacker-details"></div>
+        <label for="pokemon-moves">Move:</label>
+        <select id="pokemon-moves">
+          <option value="">Select a move</option>
+        </select>
+      </div>
+      <div>
+        <label for="search-defender-input">Defender:</label>
+        <input
+          type="text"
+          id="search-defender-input"
+          placeholder="Enter Pokémon name"
+        />
+        <div id="defender-details"></div>
+      </div>
+    </div>
+
+    <div class="damage-results">
+      <p id="damage">Damage: N/A</p>
+      <p id="roll">Damage Range: N/A</p>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
